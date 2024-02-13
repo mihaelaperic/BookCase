@@ -27,7 +27,6 @@ class DetailsBookViewModel @Inject constructor(
         try {
             book = getBookUseCase.execute(id.toInt())
         } catch (e: Exception) {
-            // Handle the error (e.g., display an error message)
             book = null
         }
     }

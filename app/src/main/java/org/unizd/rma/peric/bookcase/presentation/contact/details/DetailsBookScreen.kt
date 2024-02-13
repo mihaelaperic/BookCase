@@ -67,17 +67,15 @@ fun  DetailsBookScreen(
 
             Text(text = "Žanr")
             Spacer(modifier = Modifier.width(16.dp))
-            Text(book.genre)
+            Text(book.releaseDate)
             Spacer(modifier = Modifier.width(16.dp))
             Spacer(modifier = Modifier.height(16.dp))
 
             Text(text = "Datum")
             Spacer(modifier = Modifier.width(16.dp))
-            Text(book.releaseDate)
+            Text(book.genre)
             Spacer(modifier = Modifier.width(16.dp))
             Spacer(modifier = Modifier.height(16.dp))
-
-            Spacer(modifier = Modifier.width(16.dp))
 
             if (book.coverImage.path?.isNotEmpty() == true) {
                 Image(
